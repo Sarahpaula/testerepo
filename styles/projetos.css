@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --font-primaria:'Krona One', sans-serif;
+    --font-secundaria:'Montserrat', sans-serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria); 
+}
+
+.cabecalho{
+    padding: 5% 0 0 15%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+    
+    
+}
+.cabecalho__menu__link{
+    font-family: var(--font-secundaria); 
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.projetos{
+    text-align: center;
+    align-items: center;
+    gap: 82px;
+    padding: 5% 15%;
+
+}
+.projetos_apresentacao{
+    text-align: center;
+    justify-content: center;
+}
+
+.projetos_apresentacao_titulo{
+    font-size: 1.75rem;
+    font-family: var(--font-primaria);
+    padding-bottom: 2%;
+}
+
+.projetos_apresentacao_texto{
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    padding: 0% 18%; 
+}
+.card{
+    background-color: red;
+    margin-top: 5%;
+    height: 400px
+    
+}
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight:400;
+}
+
+@media (max-width:1200px) {
+    .cabecalho{
+        padding: 9% ;
+        
+     }
+
+     .cabecalho__menu{
+        justify-content: center;
+
+     }
+ 
+     .projetos_apresentacao_texto{
+        padding: 5%;
+        
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+   
+}
